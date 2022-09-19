@@ -1,3 +1,8 @@
 
 .header_bloc {
-}
+  background: {
+    image: url($header-bg-url);
+    size: cover;
+    position: center;
+  };
+};
