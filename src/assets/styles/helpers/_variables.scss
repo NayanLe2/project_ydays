@@ -1,0 +1,54 @@
+//color
+$clr-primary: #FFFFFF !default;
+$clr-mid-banner: #F9F6F6 !default;
+
+
+//font-family
+$ff-primary: 'Montserrat', sans-serif !default;
+
+//font-size
+$fs-body: 25 !default;
+$fs-header: 30 !default;
+
+//line-height
+$lh-body: 23 !default;
+$lh-header: 24 !default;
+
+//font-weight
+$fw-light: 300;
+$fw-regular: 400;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+/*
+@media (min-width: 50em) {
+  $fs-body: $fs-500;
+  $fs-primary-heading: $fs-900;
+  $fs-secondary-heading: $fs-800;
+
+  $fs-nav: $fs-300;
+}
+*/
+
+$size-100: 0.25rem;
+$size-200: 0.5rem;
+$size-300: 0.75rem;
+$size-400: 1rem;
+$size-500: 1.25rem;
+$size-600: 2rem;
+$size-700: 3rem;
+$size-800: 4rem;
+$size-900: 5rem;
+
+
+// _header
+$header-bg-url: "@/assets/images/header_background.jpeg" !default;
+
+//_navigation
+$nav-btn-size: 40px !default;
+
+// _header
+$menu-bg: #4F4E4E !default;
+$h1-width: 40vw !default;
+
+

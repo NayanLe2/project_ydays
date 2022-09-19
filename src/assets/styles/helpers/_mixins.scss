@@ -1,0 +1,30 @@
+@use 'breakpoints' as *;
+
+@mixin content_box($w, $h, $p, $dir) {
+  width: $w; //width
+  height: $h; //height
+  padding: $p; //padding
+  display: flex;
+  flex-direction: $dir; //direction
+};
+
+@mixin typo_styles($fw, $fs, $clr, $lh, $fstyle) {
+  font-weight: $fw;
+  font-size: toRem($fs);
+  color: $clr;
+  line-height: toRem($lh);
+  font-style: $fstyle;
+};
+
+@mixin hover_shadow($clr: $clr-primary) {
+  &:hover {
+    color: darken($clr, 30);
+  };
+};
+
+@mixin mq($key, $type) {
+  $size: map-get($breakpoints, $key);
+  @media only screen and ($type: $size) {
+    @content;
+  };
+};
