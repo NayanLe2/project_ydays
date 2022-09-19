@@ -1,8 +1,13 @@
 
 .header_bloc {
   background: {
-    image: url("@/assets/images/header_background_blur.jpg.png");
+    image: url("@/assets/images/header_background_blur.png");
     size: cover;
     position: center;
   };
+  @media screen and (min-width: 600px) {
+    background: {
+      image: url("@/assets/images/header_background_blur2.png");
+    };
+  }
 };
