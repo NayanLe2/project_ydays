@@ -1,7 +1,7 @@
 
 .header_bloc {
   background: {
-    image: url($header-bg-url);
+    image: url("@/assets/images/header_background.jpeg");
     size: cover;
     position: center;
   };
