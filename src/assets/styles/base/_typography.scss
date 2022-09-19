@@ -43,18 +43,38 @@
 };
 
 .header_bloc {
-  h1 {
+  .header_title {
+    @include typo_styles(
+            $fw: 700,
+            $fs: $fs-header,
+            $clr: $clr-primary,
+            $lh: $lh-header,
+            $fstyle: normal
+    );
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     width: $h1-width;
     height: fit-content;
     margin: auto 0;
   };
+
+  .header_text {
+    @include typo_styles(
+            $fw: 700,
+            $fs: 15px,
+            $clr: $clr-primary,
+            $lh: 14px,
+            $fstyle: normal
+    );
+    text-align: center;
+    width: $header-t-width;
+    height: fit-content;
+  }
 };
 
-
-
-.mid_banner {
+/*.mid_banner {
   h1 {
     width: fit-content;
     height: fit-content;
   };
 };
+*/

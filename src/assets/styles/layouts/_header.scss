@@ -3,7 +3,7 @@
   @include content_box(
                   $w: 100%,
                   $h: 30vh,
-                  $p: 0,
+                  $p: 20px,
                   $dir: column
   );
   align-items: center;
