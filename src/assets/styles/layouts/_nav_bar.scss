@@ -1,0 +1,11 @@
+.nav_bar {
+  @include content_box(
+                  $w: 100%,
+                  $h: 5vh,
+                  $p: 0 20px,
+                  $dir: row
+  );
+  align-items: center;
+  justify-content: space-between;
+
+}

@@ -11,3 +11,12 @@
     };
   }
 };
+
+.nav_bar {
+  background: {
+    color: $clr-nav_bar;
+  };
+  svg {
+    color: $slr-nav-text;
+  }
+}

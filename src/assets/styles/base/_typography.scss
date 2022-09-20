@@ -71,10 +71,16 @@
   }
 };
 
-/*.mid_banner {
-  h1 {
+.nav_bar {
+  p {
+    @include typo_styles(
+            $fw: 700,
+            $fs: 12px,
+            $clr: $slr-nav-text,
+            $lh: 15px,
+            $fstyle: normal
+    );
     width: fit-content;
     height: fit-content;
   };
 };
-*/
