@@ -1,0 +1,143 @@
+.bottom_project {
+  justify-content: center;
+  //align-items: center;
+  @include content_box(
+            $w: 100vw,
+            $h: 65vh,
+            $p: 5px 0 0 0,
+            $dir: column
+  );
+  .bottom_title {
+    margin: 15px auto;
+  }
+  .article {
+    margin: 15px auto;
+    @include content_box(
+            $w: 80%,
+            $h: fit-content,
+            $p: 0,
+            $dir: column
+    );
+    @media screen and (min-width: 600px) {
+      @include content_box(
+              $w: 450px,
+              $h: fit-content,
+              $p: 0,
+              $dir: column
+      );
+    }
+
+    h4 {
+      width: fit-content;
+    }
+    p {
+      margin: 8px 0 0 25px;
+    }
+  }
+}
+
+.bottom_besoins {
+  justify-content: center;
+  //align-items: center;
+  @include content_box(
+          $w: 100vw,
+          $h: 65vh,
+          $p: 5px 0 0 0,
+          $dir: column
+  );
+  .bottom_title {
+    margin: 15px auto;
+  }
+  .article {
+    margin: 15px auto;
+    @include content_box(
+            $w: 80%,
+            $h: fit-content,
+            $p: 0,
+            $dir: column
+    );
+    @media screen and (min-width: 600px) {
+      @include content_box(
+              $w: 450px,
+              $h: fit-content,
+              $p: 0,
+              $dir: column
+      );
+    }
+
+    h4 {
+      width: fit-content;
+    }
+    p {
+      margin: 8px 0 0 25px;
+    }
+  }
+}
+
+.bottom_contact {
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 600px) {
+    @include content_box(
+            $w: 96vw,
+            $h: 63vh,
+            $p: 0px,
+            $dir: column
+    );
+    margin: 1vh 2vw;
+  }
+  @media screen and (min-width: 600px) {
+    @include content_box(
+            $w: 98vw,
+            $h: 61vh,
+            $p: 0px,
+            $dir: column
+    );
+    margin: 2vh 1vw;
+  }
+  .contact_box {
+    margin: 30px 0;
+    @include content_box(
+            $w: fit-content,
+            $h: fit-content,
+            $p: 0px,
+            $dir: column
+    );
+    .mail_box {
+      .mail_svg {
+        @include typo_styles(
+                $fw: 700,
+                $fs: 35,
+                $clr: #FFFFFF,
+                $lh: 35,
+                $fstyle: normal
+        )
+      }
+      @include content_box(
+              $w: fit-content,
+              $h: fit-content,
+              $p: 0px,
+              $dir: row
+      );
+      p {
+        margin-right: 10px;
+      }
+      margin: 0 0 10px 0;
+    }
+    .insta_box {
+      @include content_box(
+              $w: fit-content,
+              $h: fit-content,
+              $p: 0px,
+              $dir: row
+      );
+      p {
+        margin-left: 10px;
+      }
+    }
+  }
+  .last_text_bottom {
+    margin: 70px 0 30px 0;
+  }
+  border-radius: 10px;
+}

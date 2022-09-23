@@ -13,19 +13,39 @@
 <script>
 export default {
     name: "nav_bar",
+    /*
+    props: {
+        title: String
+    },
+    data() {
+        return {
+            page_title: this.title
+        }
+    },
+     */
     methods: {
         nextPage: function () {
             let pageTitle = document.getElementById("page-title");
-            if (pageTitle.innerHTML === 'Le Projet') {
-                pageTitle.innerHTML = 'Nos Besoins';
-                // change to page 'Nos Besoins'
-            }else if (pageTitle.innerHTML === 'Nos Besoins') {
-                pageTitle.innerHTML = 'Nous Contacter';
+            if (pageTitle.innerHTML === "Le Projet") {
+                pageTitle.innerHTML = "Nos Besoins";
                 // change to page 'Nous Contacter'
-            } else if (pageTitle.innerHTML === 'Nous Contacter') {
-                pageTitle.innerHTML = 'Le Projet';
+            } else if (pageTitle.innerHTML === "Nos Besoins") {
+                pageTitle.innerHTML = "Nous Contacter";
                 // change to page 'Le Projet'
+            } else if (pageTitle.innerHTML === "Nous Contacter") {
+                pageTitle.innerHTML = "Le Projet";
+                // change to page 'Nos Besoins'
             }
+            /*
+            let pageTitle = document.getElementById("page-title");
+            if ( this.page_title.value === "Le Projet") {
+                this.page_title.value = "Nos Besoins";
+            }else if ( this.page_title.value === "Nos Besoins") {
+                this.page_title.value = "Nous Contacter";
+            } else if ( this.page_title.value === "Nous Contacter") {
+                this.page_title.value = "Le Projet";
+            }
+            */
         },
         beforePage: function () {
             let pageTitle = document.getElementById("page-title");
@@ -39,6 +59,15 @@ export default {
                 pageTitle.innerHTML = 'Nos Besoins';
                 // change to page 'Nos Besoins'
             }
+            /*
+            if ( this.page_title === 'Le Projet') {
+                this.page_title = 'Nos Besoins';
+            }else if ( this.title === 'Nos Besoins') {
+                this.page_title = 'Nous Contacter';
+            } else if ( this.title === 'Nous Contacter') {
+                this.page_title = 'Le Projet';
+            }
+            */
         }
     }
 }

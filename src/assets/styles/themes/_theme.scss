@@ -20,3 +20,16 @@
     color: $slr-nav-text;
   }
 }
+
+.bottom_contact {
+  background: linear-gradient(328.03deg, #FFFFFF -10%, #7EA2DD 100%);
+
+  .bottom_button {
+    background: #FFFFFF;
+    border: none;
+    padding: 10px;
+    &:hover {
+      background: none;
+    }
+  }
+};

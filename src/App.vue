@@ -2,9 +2,9 @@
 <template>
     <header_bloc></header_bloc>
     <nav_bar></nav_bar>
-    <bottom_project></bottom_project>
-    <bottom_besoins></bottom_besoins>
-    <bottom_contact></bottom_contact>
+    <bottom_project id="bottom_project"></bottom_project>
+    <bottom_besoins id="bottom_besoins"></bottom_besoins>
+    <bottom_contact id="bottom_contact"></bottom_contact>
 </template>
 
 <script>
@@ -16,15 +16,26 @@ import bottom_contact from './components/bottom_contact.vue'
 
 
 export default {
-  name: 'App',
-  components: {
+    name: 'App',
+    components: {
       header_bloc,
       nav_bar,
       bottom_project,
       bottom_besoins,
       bottom_contact
-  }
+  },
 }
 </script>
 
-<style></style>
+<style>
+#bottom_project {
+    display: none;
+}
+
+#bottom_besoins {
+    display: flex;
+}
+#bottom_contact {
+    display: none;
+}
+</style>

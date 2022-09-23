@@ -45,7 +45,7 @@
 .header_bloc {
   .header_title {
     @include typo_styles(
-            $fw: 700,
+            $fw: $fw-bold,
             $fs: $fs-header,
             $clr: $clr-primary,
             $lh: $lh-header,
@@ -59,7 +59,7 @@
 
   .header_text {
     @include typo_styles(
-            $fw: 700,
+            $fw: $fw-bold,
             $fs: 15px,
             $clr: $clr-primary,
             $lh: 14px,
@@ -73,14 +73,191 @@
 
 .nav_bar {
   p {
-    @include typo_styles(
-            $fw: 700,
-            $fs: 12px,
-            $clr: $slr-nav-text,
-            $lh: 15px,
-            $fstyle: normal
-    );
+    @media screen and (max-width: 1000px) {
+      @include typo_styles(
+              $fw: 600,
+              $fs: 14,
+              $clr: $slr-nav-text,
+              $lh: 15,
+              $fstyle: normal
+      );
+    };
+    @media screen and (min-width: 1000px) {
+      @include typo_styles(
+              $fw: 600,
+              $fs: 17,
+              $clr: $slr-nav-text,
+              $lh: 17,
+              $fstyle: normal
+      );
+    };
     width: fit-content;
     height: fit-content;
   };
 };
+
+.bottom_contact {
+  p {
+    @include typo_styles(
+                    $fw: 700,
+                    $fs: 20,
+                    $clr: #FFFFFF,
+                    $lh: 24,
+                    $fstyle: normal
+    );
+    text-align: center;
+  }
+  a {
+    margin: 0 auto;
+  }
+  .bottom_button {
+    text-align: center;
+    text-decoration: none;
+    @include typo_styles(
+            $fw: 700,
+            $fs: 20,
+            $clr: rgba(205, 220, 242, 1),
+            $lh: 24,
+            $fstyle: normal
+    );
+    &:hover {
+      @include typo_styles(
+              $fw: 700,
+              $fs: 20,
+              $clr: #FFFFFF,
+              $lh: 24,
+              $fstyle: normal
+      );
+    }
+  }
+}
+
+.bottom_project {
+  .bottom_title {
+    @include typo_styles(
+            $fw: $fw-bold,
+            $fs: 15,
+            $clr: #000000,
+            $lh: 15,
+            $fstyle: normal
+    );
+    @media screen and (min-width: 600px) {
+      @include typo_styles(
+              $fw: $fw-bold,
+              $fs: 17,
+              $clr: #000000,
+              $lh: 17,
+              $fstyle: normal
+      );
+    }
+    width: fit-content;
+  }
+  .article {
+    p {
+      text-align: justify;
+      @media screen and (max-width: 600px) {
+        @include typo_styles(
+                $fw: 500,
+                $fs: 14,
+                $clr: #000000,
+                $lh: 14,
+                $fstyle: normal
+        );
+      }
+      @media screen and (min-width: 600px) {
+        @include typo_styles(
+                $fw: 500,
+                $fs: 16,
+                $clr: #000000,
+                $lh: 16,
+                $fstyle: normal
+        );
+      }
+    };
+    h4 {
+      @media screen and (max-width: 600px) {
+        @include typo_styles(
+                $fw: $fw-bold,
+                $fs: 13,
+                $clr: #000000,
+                $lh: 13,
+                $fstyle: normal
+        );
+      }
+      @media screen and (min-width: 600px) {
+        @include typo_styles(
+                $fw: $fw-bold,
+                $fs: 16,
+                $clr: #000000,
+                $lh: 16,
+                $fstyle: normal
+        );
+      }
+  };
+}
+}
+
+.bottom_besoins {
+  .bottom_title {
+    @include typo_styles(
+            $fw: $fw-bold,
+            $fs: 15,
+            $clr: #000000,
+            $lh: 15,
+            $fstyle: normal
+    );
+    @media screen and (min-width: 600px) {
+      @include typo_styles(
+              $fw: $fw-bold,
+              $fs: 17,
+              $clr: #000000,
+              $lh: 17,
+              $fstyle: normal
+      );
+    }
+    width: fit-content;
+  }
+  .article {
+    p {
+      text-align: justify;
+      @media screen and (max-width: 600px) {
+        @include typo_styles(
+                $fw: 500,
+                $fs: 14,
+                $clr: #000000,
+                $lh: 14,
+                $fstyle: normal
+        );
+      }
+      @media screen and (min-width: 600px) {
+        @include typo_styles(
+                $fw: 500,
+                $fs: 16,
+                $clr: #000000,
+                $lh: 16,
+                $fstyle: normal
+        );
+      }
+    };
+    h4 {
+      @media screen and (max-width: 600px) {
+        @include typo_styles(
+                $fw: $fw-bold,
+                $fs: 13,
+                $clr: #000000,
+                $lh: 13,
+                $fstyle: normal
+        );
+      }
+      @media screen and (min-width: 600px) {
+        @include typo_styles(
+                $fw: $fw-bold,
+                $fs: 16,
+                $clr: #000000,
+                $lh: 16,
+                $fstyle: normal
+        );
+      }
+    };
+  }
+}
