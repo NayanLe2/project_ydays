@@ -33,9 +33,9 @@ export default {
 }
 
 #bottom_besoins {
-    display: flex;
+    display: none;
 }
 #bottom_contact {
-    display: none;
+    display: flex;
 }
 </style>
