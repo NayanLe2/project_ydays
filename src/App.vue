@@ -55,6 +55,9 @@ export default {
         },
         beforePage: function () {
             let pageTitle = document.getElementById("page-title");
+            let bottom_project = document.getElementById("bottom_project");
+            let bottom_besoins = document.getElementById("bottom_besoins");
+            let bottom_contact = document.getElementById("bottom_contact");
             if (pageTitle.innerHTML === 'Le Projet') {
                 pageTitle.innerHTML = 'Nous Contacter';
                 bottom_project.style.display = "none";
