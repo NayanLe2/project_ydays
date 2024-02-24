@@ -2,7 +2,7 @@
 
 Welcome to the ShopNextClothes project page! This is a simple page designed to promote our online thrift store, ShopNextClothes.
 
-<img width="1320" alt="image" src="https://github.com/NayanMallet/project_ydays/assets/81246812/fd6b7845-edea-4df4-9f97-063152daad79">
+![image](https://github.com/NayanMallet/project_ydays/assets/81246812/fd6b7845-edea-4df4-9f97-063152daad79)
 
 
 ## Project setup
